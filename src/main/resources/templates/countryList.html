@@ -16,7 +16,7 @@
         </tr>
     </table>
 
-    <!-- dropdown box to html -->
+    <!-- dropdown box to html ... filters the country -->
     <br><br>
     <select id = "country">
         <option th:each="c: ${countryList}" th:value = "${c.code}" th:text = "${c.name}"></option>
