@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Springboot page</title>
+</head>
+<body>
+    <h1>Welcome to Spring Boot Lesson 2</h1>
+
+    <br>
+    <h3>The current time is <span data-th-text="${currTime}"></span></h3>
+    <br>
+
+    <!-- Displays good morning and afternoon depending on time of the day -->
+    <!-- thymeleaf operator syntax: le = less than or equal to ; lt is less than-->
+    <div data-th-if="${currHour} lt 11">
+        Good morning!
+    </div>
+    <!-- thymeleaf operator syntax: ge = greater than or equal to -->
+    <div data-th-if="${currHour} ge 11">
+        Good afternoon!
+    </div>
+
+</body>
+</html>
